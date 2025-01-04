@@ -174,7 +174,7 @@ header {
     font-family: var(--fonte-dmsans);
     font-size: 10px;
     font-weight: 500;
-    color: rgba(38, 38, 38, 0.6);
+    color: var(--cor-mais-escura);
     margin-bottom: 5px;
 }
 
@@ -183,5 +183,54 @@ header {
     font-size: 16px;
     font-weight: 410;
     line-height: 20px;
-    color: #262626;
+    color: var(--cor-mais-escura);
+}
+
+#categorias h2 {
+    font-family: var(--fonte-sequelsans);
+    font-style: normal;
+    font-weight: 415;
+    font-size: 28px;
+    line-height: 38px;
+    color: var(--cor-mais-escura);
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+#categorias .card-title {
+    font-family: var(--fonte-sequelsans);
+    font-style: normal;
+    font-weight: 435;
+    font-size: 32px;
+    line-height: 75px;
+    text-align: center; 
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #262626 0%, #B8C2CE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0 auto;
+}
+
+.card-img-below {
+    width: 270px;
+    height: 288px;
+    object-fit: cover;
+}
+
+.card-img-above {
+    width: 320px;
+    height: 235px;
+    object-fit: cover;
+}
+
+#mais-vistas h2 {
+    font-family: var(--fonte-sequelsans);
+    font-style: normal;
+    font-weight: 415;
+    font-size: 28px;
+    line-height: 38px; 
+    color: #262626; 
+    text-align: left;
+    margin-bottom: 20px; 
 }
