@@ -16,7 +16,7 @@
 
 :root {
     --cor-mais-clara: #F9FAFC;
-    --cor-clara:: #EBEEF3;
+    --cor-clara: #EBEEF3;
     --azul-branco: #E1E8F0;
     --cinza-claro: #B8C2CE;
     --cor-mais-escura: #262626;
@@ -205,7 +205,7 @@ header {
     line-height: 75px;
     text-align: center; 
     text-transform: uppercase;
-    background: linear-gradient(180deg, #262626 0%, #B8C2CE 100%);
+    background: linear-gradient(180deg, var(--cor-mais-escura) 0%, #B8C2CE 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -230,7 +230,67 @@ header {
     font-weight: 415;
     font-size: 28px;
     line-height: 38px; 
-    color: #262626; 
+    color: var(--cor-mais-escura); 
     text-align: left;
     margin-bottom: 20px; 
+}
+
+.imgs__3 {
+    width: 234px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.p__data {
+    font-family: var(--fonte-dmsans);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 10px; 
+    color: var(--cor-mais-escura);
+}
+
+.h6__3 {
+    font-family: var(--fonte-sequelsans);
+    font-style: normal;
+    font-weight: 415;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--cor-mais-escura);
+}
+
+.p__txt3 {
+    font-family: var(--fonte-dmsans);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px; 
+    line-height: 15px;
+    color: #696868;
+}
+
+#mais-vistas .tag {
+    font-family: var(--fonte-dmsans);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: capitalize; 
+    color: var(--cor-clara); 
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 1px solid var(--cor-clara);
+    border-radius: 3px;
+    padding: 10px 10px;
+}
+
+#mais-vistas .card-img {
+    background: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    object-fit: cover;
 }
