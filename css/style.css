@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@font-face {
+    font-family: 'Darkline';
+    src: url(../assets/fonts/Darkline.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sequel Sans';
+    src: url(../assets/fonts/sequel-sans-black-display.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --cor-mais-clara: #F9FAFC;
+    --cor-clara:: #EBEEF3;
+    --azul-branco: #E1E8F0;
+    --cinza-claro: #B8C2CE;
+    --cor-mais-escura: #262626;
+    --fonte-logo: 'Darkline', sans-serif;
+    --fonte-padrao: 'DM Sans', sans-serif;
+    --fonte-sequelsans: 'Sequel Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100vw;
+}
+
+header {
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+}
+
+.header__navbar{
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 19px;
+}
+
+.nav__logo {
+    font-family: var(--fonte-logo);
+    font-size: 2.6rem;
+    color: black;
+}
+
+.nav__item{
+    font-family: var(--fonte-padrao);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    color: var(--cor-mais-escura);
+    flex: none;
+
+}
+
+.nav__search{
+    border-radius: 6px;
+}
+
+.search__input{
+    background-color: var(--cinza-claro);
+    width: 6.25rem;
+    height: 2.188rem;
+    padding-right: 0.625rem;
+    padding-left: 0.938rem;
+}
+
+.search__input::placeholder{
+    color: #FFFFFF;
+}
+
+.texto__search{
+    color: #FFFFFF;
+}
+
+.home__section {
+    position: relative;
+    text-align: center;
+}
+
+.home__h1 {
+    font-family: var(--fonte-sequelsans);
+    font-style: normal;
+    font-weight: 435;
+    font-size: 80px;
+    line-height: 75px;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #262626 0%, #B8C2CE 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-top: 2rem;
+    margin-left: 0;
+    position: relative;
+    z-index: 1;
+    text-align: left;
+}
+
+.home__img {
+    width: 18.75rem;
+    height: 18.75rem;
+    border-radius: 6px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: 2;
+}
+
+.home__p,
+.home__a {
+    width: 365px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home__p {
+    margin-top: 250px;
+    font-family: var(--fonte-padrao);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #262626;
+}
+
+.home__section a {
+    margin-top: 20px;
+}
+
+.today-title {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: capitalize;
+    color: #B8C2CE;
+    margin-bottom: 20px;
+}
+
+  /* Card Container */
+  .card-overlay {
+    position: relative;
+    width: 100%;
+    height: 233px;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  /* Imagem do Card */
+  .card-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    mix-blend-mode: multiply;
+  }
+  
+  /* Gradiente sobre a imagem */
+  .card-overlay::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(360deg, #F2F2F2 35.23%, rgba(242, 242, 242, 0) 100%);
+    z-index: 1;
+  }
+  
+  /* Conteúdo sobre a imagem */
+  .card-content {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    z-index: 2;
+    color: #262626;
+    font-family: 'DM Sans', sans-serif;
+  }
+  
+  /* Data do Post */
+  .card-date {
+    font-size: 10px;
+    font-weight: 500;
+    color: rgba(38, 38, 38, 0.6);
+    margin-bottom: 5px;
+  }
+  
+  /* Título do Card */
+  .card-title {
+    font-family: 'Sequel Sans', sans-serif;
+    font-weight: 410;
+    font-size: 16px;
+    line-height: 20px;
+    color: #262626;
+  }
+  
