@@ -294,3 +294,22 @@ header {
     opacity: 0.6;
     object-fit: cover;
 }
+
+.p__data__cabelos {
+    font-family: var(--fonte-dmsans);
+    font-style: normal;
+    font-weight: 400; 
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+    
+}
+
+.h5__cabelos {
+    font-family: var(--fonte-sequelsans);
+    font-style: normal;
+    font-weight: 435;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
