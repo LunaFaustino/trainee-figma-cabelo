@@ -6,10 +6,16 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Sequel Sans Light';
+    src: url(../assets/fonts/Sequel\ Sans\ Light\ Body.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
-    font-family: 'Sequel Sans';
-    src: url(../assets/fonts/sequel-sans-black-display.ttf) format('truetype');
+    font-family: 'Sequel Sans Medium';
+    src: url(../assets/fonts/Sequel\ Sans\ Medium\ Disp.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -22,7 +28,8 @@
     --cor-mais-escura: #262626;
     --fonte-logo: 'Darkline', sans-serif;
     --fonte-dmsans: 'DM Sans', sans-serif;
-    --fonte-sequelsans: 'Sequel Sans', sans-serif;
+    --fonte-sequel-light: 'Sequel Sans Light', sans-serif;
+    --fonte-sequel-medium: 'Sequel Sans Medium', sans-serif;
 }
 
 html {
@@ -92,7 +99,7 @@ header {
 }
 
 .home__h1 {
-    font-family: var(--fonte-sequelsans);
+    font-family: var(--fonte-sequel-medium);
     font-style: normal;
     font-weight: 435;
     font-size: 80px;
@@ -166,7 +173,7 @@ header {
     background: linear-gradient(360deg, #F2F2F2 35.23%, rgba(242, 242, 242, 0) 100%);
     border-radius: 6px;
     z-index: 1;
-    color: #262626;
+    color: var(--cor-mais-escura);
     text-align: left;
 }
 
@@ -179,7 +186,7 @@ header {
 }
 
 .card-title {
-    font-family: var(--fonte-sequelsans);
+    font-family: var(--fonte-sequel-light);
     font-size: 16px;
     font-weight: 410;
     line-height: 20px;
@@ -187,7 +194,7 @@ header {
 }
 
 #categorias h2 {
-    font-family: var(--fonte-sequelsans);
+    font-family: var(--fonte-sequel-medium);
     font-style: normal;
     font-weight: 415;
     font-size: 28px;
@@ -198,7 +205,7 @@ header {
 }
 
 #categorias .card-title {
-    font-family: var(--fonte-sequelsans);
+    font-family: var(--fonte-sequel-medium);
     font-style: normal;
     font-weight: 435;
     font-size: 32px;
@@ -225,7 +232,7 @@ header {
 }
 
 #mais-vistas h2 {
-    font-family: var(--fonte-sequelsans);
+    font-family: var(--fonte-sequel-medium);
     font-style: normal;
     font-weight: 415;
     font-size: 28px;
@@ -250,15 +257,14 @@ header {
     color: var(--cor-mais-escura);
 }
 
-.h6__3 {
-    font-family: var(--fonte-sequelsans);
+#mais-vistas .h6__3 {
+    font-family: var(--fonte-sequel-light);
     font-style: normal;
     font-weight: 415;
     font-size: 18px;
     line-height: 25px;
     color: var(--cor-mais-escura);
 }
-
 .p__txt3 {
     font-family: var(--fonte-dmsans);
     font-style: normal;
@@ -308,7 +314,7 @@ header {
 }
 
 .h5__cabelos {
-    font-family: var(--fonte-sequelsans);
+    font-family: var(--fonte-sequel-medium);
     font-style: normal;
     font-weight: 435;
     font-size: 36px;
@@ -352,7 +358,7 @@ header {
 }
 
 #carousel .carousel__h5 {
-    font-family: var(--fonte-sequelsans);
+    font-family: var(--fonte-sequel-medium);
     font-style: normal;
     font-weight: 435;
     font-size: 36px;
@@ -405,3 +411,92 @@ header {
     background-color: #d6d6d6;
 }
 
+#noticias-vendidos h2 {
+    font-family: var(--fonte-sequel-medium);
+    font-style: normal;
+    font-weight: 415;
+    font-size: 28px;
+    line-height: 38px;
+    color: var(--cor-mais-escura);
+}
+
+#noticias-vendidos .noticia__principal {
+    background: url('../imgs/recentes-img1.avif') center/cover no-repeat;
+    border-radius: 6px;
+    overflow: hidden;
+    color: #ffffff;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    padding: 15px;
+}
+
+.blur {
+    border-radius: 6px;
+    color: #ffffff;
+    background: linear-gradient(108.74deg, rgba(255, 255, 255, 0.24) 24%, rgba(255, 255, 255, 0.06) 100%);
+    box-shadow: 0px 0px 50px -25px #00000080;
+    backdrop-filter: blur(50px);
+    border-radius: 0px 0px 6px 6px;
+}
+
+.blur__p{
+    font-family: var(--fonte-dmsans);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px; 
+    line-height: 10px;
+    color: #EBEEF3;
+}
+
+.blur__h5{
+    font-family: var(--fonte-sequel-light);
+    font-style: normal;
+    font-weight: 410;
+    font-size: 16px;
+    line-height: 20px;
+    color: #EBEEF3;
+}
+
+#noticias-vendidos .list-unstyled img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+#noticias-vendidos .list-unstyled p {
+    font-family: var(--fonte-dmsans);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 10px;
+    color: var(--cor-mais-escura);
+}
+
+#noticias-vendidos .list-unstyled h6 {
+    font-family: var(--fonte-sequel-light);
+    font-style: normal;
+    font-weight: 410;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--cor-mais-escura);
+}
+
+.mais__noti{
+    font-family: var(--fonte-dmsans);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.01em; 
+    color: #FFFFFF; 
+    background-color: var(--cinza-claro);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
