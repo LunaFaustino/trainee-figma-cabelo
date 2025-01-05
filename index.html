@@ -183,39 +183,52 @@
         </section>
 
         <section id="carousel" class="py-5 bg-light">
-            <div class="container">
-                <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-
+            <div class="container position-relative">
+                <div id="newsCarousel" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="card text-white border-0">
-                                <img src="imgs/carrossel-img.webp" class="card-img" alt="Slide 1">
+                                <img src="imgs/carrossel-img.webp" class="card-img " alt="Slide 1">
                                 <div class="card-img-overlay d-flex flex-column justify-content-end p-4" style="background: rgba(0, 0, 0, 0.4);">
-                                    <span class="badge bg-primary mb-2">Fofoca</span>
-                                    <p class="text-uppercase small mb-1">Terra &ndash; 03 Janeiro 2025</p>
-                                    <h5 class="fw-bold mb-1">Rebeca Abravanel enfrenta 'missão' ao cortar o cabelo do filho com Alexandre Pato</h5>
-                                    <p>Em registro fofíssimo, Rebeca Abravanel mostra uma verdadeira 'missão' ao cortar o cabelo do seu filho com Alexandre Pato</p>
+
+                                    <div class="tag position-absolute top-0 start-0" style="margin: 10px;">Fofoca</div>
+                                    <p class="text-uppercase small mb-1 carousel__p">Terra &ndash; 03 Janeiro 2025</p>
+                                    <h5 class="fw-bold mb-1 carousel__h5">Rebeca Abravanel enfrenta 'missão' ao cortar o cabelo do filho com Alexandre Pato</h5>
+                                    <p class="carousel__p">Em registro fofíssimo, Rebeca Abravanel mostra uma verdadeira 'missão' ao cortar o cabelo do seu filho com Alexandre Pato.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
-            </div>
+
+                <nav aria-label="Page navigation">
+                    <ul class="pagination mb-0">
+                        <li class="page-item disabled">
+                            <a class="page-link bg-light border-0 rounded-3" aria-label="Previous" >
+                                <i class="bi bi-arrow-left"></i>
+                            </a>
+                        </li>
+                        <li class="page-item active">
+                            <a class="page-link bg-dark text-white border-0 rounded-circle" >1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link bg-light border-0 rounded-circle" >2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link bg-light border-0 rounded-circle" >3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link bg-light border-0 rounded-circle" >4</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link bg-dark text-white border-0 rounded-3" aria-label="Next" >
+                            <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
         </section>
+
 
         <section id="noticias-vendidos" class="py-5 bg-light">
             <div class="container">
@@ -385,24 +398,24 @@
                 <nav aria-label="Page navigation">
                     <ul class="pagination mb-0">
                         <li class="page-item">
-                            <a class="page-link bg-light border-0 rounded-3" aria-label="Previous" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                            <a class="page-link bg-light border-0 rounded-3" aria-label="Previous" >
                             <i class="bi bi-arrow-left"></i>
                             </a>
                         </li>
                         <li class="page-item active">
-                            <a class="page-link bg-dark text-white border-0 rounded-circle" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">1</a>
+                            <a class="page-link bg-dark text-white border-0 rounded-circle" >1</a>
                         </li>
                         <li class="page-item">
-                            <a class="page-link bg-light border-0 rounded-circle" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">2</a>
+                            <a class="page-link bg-light border-0 rounded-circle" >2</a>
                         </li>
                         <li class="page-item">
-                            <a class="page-link bg-light border-0 rounded-circle" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">3</a>
+                            <a class="page-link bg-light border-0 rounded-circle" >3</a>
                         </li>
                         <li class="page-item">
-                            <a class="page-link bg-light border-0 rounded-circle" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">4</a>
+                            <a class="page-link bg-light border-0 rounded-circle" >4</a>
                         </li>
                         <li class="page-item">
-                            <a class="page-link bg-dark text-white border-0 rounded-3" aria-label="Next" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                            <a class="page-link bg-dark text-white border-0 rounded-3" aria-label="Next" >
                             <i class="bi bi-arrow-right"></i>
                             </a>
                         </li>

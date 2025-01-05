@@ -205,7 +205,7 @@ header {
     line-height: 75px;
     text-align: center; 
     text-transform: uppercase;
-    background: linear-gradient(180deg, var(--cor-mais-escura) 0%, #B8C2CE 100%);
+    background: linear-gradient(180deg, var(--cor-mais-escura) 0%, var(--cinza-claro) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -285,15 +285,17 @@ header {
     left: 10px;
     border: 1px solid var(--cor-clara);
     border-radius: 3px;
-    padding: 10px 10px;
 }
 
 #mais-vistas .card-img {
+    height: 609px;
     background: #000000;
     mix-blend-mode: normal;
-    opacity: 0.6;
-    object-fit: cover;
+    opacity: 0.6; 
+    border-radius: 6px;
+    object-fit: contain; 
 }
+
 
 .p__data__cabelos {
     font-family: var(--fonte-dmsans);
@@ -313,3 +315,93 @@ header {
     line-height: 42px;
     color: #FFFFFF;
 }
+
+#carousel .card-img {
+    height: 518px;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    object-fit: cover;
+}
+
+#carousel .tag {
+    width: 76px;
+    height: 26px;
+    font-family: var(--fonte-dmsans);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--cor-clara);
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    left: 10px;
+    border: 1px solid var(--cor-clara);
+    border-radius: 3px; 
+}
+
+#carousel .carousel__p {
+    font-family: var(--fonte-dmsans);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px; 
+    line-height: 18px;
+    color: var(--cor-mais-clara);
+}
+
+#carousel .carousel__h5 {
+    font-family: var(--fonte-sequelsans);
+    font-style: normal;
+    font-weight: 435;
+    font-size: 36px;
+    line-height: 43px;
+    text-transform: uppercase;
+    color: var(--cor-mais-clara);
+}
+
+#carousel .carousel__p {
+    font-family: var(--fonte-dmsans);
+    font-style: normal;
+    font-weight: 500; 
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+#carousel .pagination {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#carousel .pagination .page-item .page-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    font-size: 18px;
+    color: var(--cor-mais-escura);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#carousel .pagination .page-item.disabled .page-link {
+    background-color: #a0a0a0;
+    color: #a0a0a0; 
+}
+
+#carousel .pagination .page-item.active .page-link {
+    background-color: #000;
+    color: #fff;
+}
+
+#carousel .pagination .page-item .page-link:hover {
+    background-color: #d6d6d6;
+}
+
