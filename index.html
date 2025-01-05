@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/bootstrap/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Hair on Air</title>
+</head>
+<body>
+    <header class="border-bottom">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+
+                <a class="navbar-brand nav__logo" href="#">Hair on Air</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto header__navbar">
+                        <li class="nav-item nav__item">
+                            <a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item nav__item">
+                            <a class="nav-link" href="#categorias">Categorias</a></li>
+                        <li class="nav-item nav__item">
+                            <a class="nav-link" href="#mais-vistas">Mais Vistas</a></li>
+                        <li class="nav-item nav__item">
+                            <a class="nav-link" href="#noticias-vendidos">Notícias</a></li>
+                        <li class="nav-item nav__item">
+                            <a class="nav-link" href="#noticias-vendidos">Mais Vendidos</a></li>
+                        <li class="nav-item nav__item">
+                            <a class="nav-link" href="#artigos">Artigos</a></li>
+                    </ul>
+                    
+                    <form class="d-flex position-relative nav__search">
+                        <input class="form-control ps-5 search__input" type="search" placeholder="Procurar">
+                        <span class="position-absolute top-50 start-0 translate-middle-y ms-3 texto__search">
+                            <i class="bi bi-search"></i>
+                        </span>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="py-5 position-relative bg-light home__section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 position-relative mx-auto">
+
+                        <div class="mb-4 text-end">
+                            <img src="imgs/home-img.png" alt="Player" class="img-fluid home__img">
+                        </div>
+
+                        <h1 class="display-3 fw-bold home__h1">
+                            QUAL <br>O MELHOR<br> PRODUTO DE <br>BELEZA?
+                        </h1>
+
+                        <p class="mt-3 text-muted home__p">
+                            O Prêmio Geração Glamour de Beleza é a premiação mais importante do mercado de beleza nacional.
+                        </p>
+                        <a href="" class="btn btn-dark btn-lg mt-3 home__a">Continue Lendo</a>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <h5 class="text-muted mb-4 hoje__title">Hoje</h5>
+
+                        <div class="card bg-dark text-white mb-3 position-relative">
+                            <img src="/imgs/home-card1.webp" class="card-img rounded" alt="Image 1">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end p-3">
+                                <p class="card-text small text-muted">Terra - 04 Janeiro 2025</p>
+                                <h6 class="card-title">Verão: 5 cuidados para manter o cabelo saudável</h6>
+                            </div>
+                        </div>
+
+                        <div class="card bg-dark text-white position-relative">
+                            <img src="imgs/home-card2.webp" class="card-img rounded" alt="Image 2">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end p-3">
+                                <p class="card-text small text-muted">Capricho - 04 Janeiro 2025</p>
+                                <h6 class="card-title">Cabelo no tom Mocha Mousse, a cor Pantone para 2025, é a nova tendência</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="categorias" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="fw-bold mb-5">Categorias</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card text-center bg-light border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold categorias__h5">SHAMPOO</h5>
+                            </div>
+                            <img src="imgs/categorias-shampoo.jpg" alt="Football" class="card-img-top rounded card-img-below">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card text-center bg-light border-0 shadow-sm">
+                            <img src="imgs/categorias-tratamento.jpg" alt="Basketball" class="card-img-top rounded card-img-above">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold categorias__h5">QUÍMICAS</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card text-center bg-light border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold categorias__h5">MÁSCARAS</h5>
+                            </div>
+                            <img src="imgs/categorias-condicionador.jpg" alt="Car Sport" class="card-img-top rounded card-img-below">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card text-center bg-light border-0 shadow-sm">
+                            <img src="imgs/categorias-finalizador.webp" alt="Table Tennis" class="card-img-top rounded card-img-above">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold categorias__h5">FINALIZADOR</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mais-vistas" class="py-5 bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h2 class="fw-bold mb-4">Notícias Mais Vistas</h2>
+
+                        <div class="d-flex mb-4">
+                            <img src="imgs/vistas-img1.jpg" alt="News 1" class="img-fluid rounded me-3 imgs__3" style="width: 150px; height: 100px;">
+                            <div>
+                                <p class="text-muted small mb-1 p__data">IstoÉ &ndash; 01 Janeiro 2025</p>
+                                <h6 class="fw-bold mb-1 h6__3">Tendências de cortes de cabelo cacheados para 2025</h6>
+                                
+                                <p class="text-muted small mb-0 p__txt3">Com a chegada de 2025, novas tendências de cortes de cabelo estão se destacando, especialmente para quem possui cabelos cacheados...</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mb-4">
+                            <img src="imgs/vistas-img2.jpg" alt="News 2" class="img-fluid rounded me-3 imgs__3" style="width: 150px; height: 100px;">
+                            <div>
+                                <p class="text-muted small mb-1 p__data">IstoÉ &ndash; 02 Janeiro 2025</p>
+                                <h6 class="fw-bold mb-1 h6__3">Cortes de cabelo curtos para 2025</h6>
+
+                                <p class="text-muted small mb-0 p__txt3">O ano de 2025 vem prometendo grandes transformações, e um dos aspectos mais marcantes dessas mudanças é a renovação do visual...</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex">
+                            <img src="imgs/vistas-img3.webp" alt="News 3" class="img-fluid rounded me-3 imgs__3" style="width: 150px; height: 100px;">
+                            <div>
+                                <p class="text-muted small mb-1 p__data">Claudia &ndash; 03 Janeiro 2025</p>
+                                <h6 class="fw-bold mb-1 h6__3">Easy Chic é tendência de cor de 2025</h6>
+                                <p class="text-muted small mb-0 p__txt3">São três tonalidades para iluminar as madeixas na medida certa, como conta Rodrigo Cintra...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 position-relative">
+                        <div class="card text-white border-0">
+                            <img src="imgs/vistas-img4.avif" alt="" class="card-img">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end p-4" style="background: rgba(0, 0, 0, 0.4);">
+                                <div class="tag position-absolute top-0 start-0" style="margin: 10px;">
+                                    Cabelos
+                                </div>
+                                <p class="text-uppercase fw-bold text-white small mb-1 p__data__cabelos">Glamour &ndash; 01 Janeiro 2025</p>
+                                <h5 class="fw-bold mb-0 h5__cabelos">OS CORTES DE CABELO QUE VÃO BOMBAR EM 2025!</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="carousel" class="py-5 bg-light">
+            <div class="container position-relative">
+                <div id="newsCarousel" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card text-white border-0">
+                                <img src="imgs/carrossel-img.webp" class="card-img " alt="Slide 1">
+                                <div class="card-img-overlay d-flex flex-column justify-content-end p-4" style="background: rgba(0, 0, 0, 0.4);">
+
+                                    <div class="tag position-absolute top-0 start-0" style="margin: 10px;">Fofoca</div>
+                                    <p class="text-uppercase small mb-1 carousel__p">Terra &ndash; 03 Janeiro 2025</p>
+                                    <h5 class="fw-bold mb-1 carousel__h5">Rebeca Abravanel enfrenta 'missão' ao cortar o cabelo do filho com Alexandre Pato</h5>
+                                    <p class="carousel__p">Em registro fofíssimo, Rebeca Abravanel mostra uma verdadeira 'missão' ao cortar o cabelo do seu filho com Alexandre Pato.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <nav aria-label="Page navigation">
+                    <ul class="pagination mb-0">
+                        <li class="page-item disabled">
+                            <a class="page-link bg-light border-0 rounded-3" aria-label="Previous" >
+                                <i class="bi bi-arrow-left"></i>
+                            </a>
+                        </li>
+                        <li class="page-item active">
+                            <a class="page-link bg-dark text-white border-0 rounded-circle" >1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link bg-light border-0 rounded-circle" >2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link bg-light border-0 rounded-circle" >3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link bg-light border-0 rounded-circle" >4</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link bg-dark text-white border-0 rounded-3" aria-label="Next" >
+                            <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+        </section>
+
+
+        <section id="noticias-vendidos" class="py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="fw-bold mb-4">Notícias Recentes</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card bg-dark text-white border-0 rounded-3 overflow-hidden h-100">
+                                    <div class="d-flex flex-column justify-content-end h-100 noticia__principal" >
+                                        <div class="p-3 blur">
+                                            <p class="text-uppercase small mb-2 blur__p">Catraca Livre &ndash; 04 Janeiro 2025</p>
+                                            <h5 class="fw-bold mb-0 blur__h5">Além da genética: entenda 7 fatores que podem causar calvície</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li class="d-flex mb-3">
+                                        <img src="imgs/recentes-img2.avif" alt="Taekwondo" class="img-fluid rounded me-3" >
+                                        <div>
+                                            <p class="text-muted small mb-1">Marie Claire &ndash; 04 Janeiro 2025</p>
+                                            <h6 class="fw-bold mb-0">Bianca Biancardi surge com cabelos arrepiados durante temporal e explica motivo: 'Tomei um choque'</h6>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex mb-3">
+                                        <img src="imgs/recentes-img3.webp" alt="Golf" class="img-fluid rounded me-3" >
+                                        <div>
+                                            <p class="text-muted small mb-1">Social1 &ndash; 04 Janeiro 2025</p>
+                                            <h6 class="fw-bold mb-0">Cabelos na praia: dicas essenciais para manter os fios hidratados</h6>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <img src="imgs/recentes-img4.avif" alt="Cricket" class="img-fluid rounded me-3" >
+                                        <div>
+                                            <p class="text-muted small mb-1">Metrópoles &ndash; 04 Janeiro 2025</p>
+                                            <h6 class="fw-bold mb-0">Receita caseira com 2 ingredientes “ressuscita” cabelos danificados</h6>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a href="#" class="btn btn-outline-secondary btn-sm mt-3 mais__noti">Mais <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <h2 class="fw-bold mb-4">Produtos Mais Vendidos</h2>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span>1. Óleo Capilar L'Oréal Paris</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span>2. Máscara Super Hidratante Morte Súbita</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span>3. Argan Oil Lola Cosmetics</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span>4. Escova Secadora Cadence 4 em 1</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span>5. Shampoo Anticaspa Clear Men</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span>6. Tônico Capilar Rapunzel</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="artigos" class="py-5 bg-white">
+            <div class="container">
+                <h2 class="fw-bold mb-4">Artigos sobre Cabelo</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm position-relative">
+                            <img src="imgs/artigos-img1.webp" alt="Basketball" class="card-img-top">
+                            <span class="badge bg-secondary position-absolute top-0 end-0 m-3">Pele</span>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="imgs/sallve-logo.png" alt="Author" class="author-logo me-2" >
+                                    <h6 class="author-name mb-0">sallve</h6>
+                                </div>
+                                <p class="text-muted small mb-2 article-date">20 Dezembro 2024</p>
+                                <h5 class="card-title mb-2">Melasma no verão: o quadro pode piorar?</h5>
+                                <p class="text-muted small description">Conversamos com dermatologistas para entender quais os principais cuidados na estação</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm position-relative">
+                            <img src="imgs/artigos-img2.webp" alt="Hockey" class="card-img-top">
+                            <span class="badge bg-secondary position-absolute top-0 end-0 m-3">Curiosidade</span>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="imgs/sallve-logo.png" alt="Author" class="author-logo me-2" >
+                                    <h6 class="author-name mb-0">sallve</h6>
+                                </div>
+                                <p class="text-muted small mb-2 article-date">31 Maio 2024</p>
+                                <h5 class="card-title mb-2">É verdade que os cílios não crescem mais?</h5>
+                                <p class="text-muted small description">Especialistas respondem uma das dúvidas mais comuns sobre crescimento e queda dos cílios</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm position-relative">
+                            <img src="imgs/artigos-img3.webp" alt="Badminton" class="card-img-top">
+                            <span class="badge bg-secondary position-absolute top-0 end-0 m-3">Suprema</span>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="imgs/sallve-logo.png" alt="Author" class="author-logo me-2" >
+                                    <h6 class="author-name mb-0">sallve</h6>
+                                </div>
+                                <p class="text-muted small mb-2 article-date">27 Novembro 2020</p>
+                                <h5 class="card-title mb-2">Lady Di e o poder de um corte de cabelo</h5>
+                                <p class="text-muted small description">Lady Di fala sobre o momento que mudou sua vida: cortar seu cabelo. E aí, quem está com medo da tesoura?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-start mt-4">
+                    <button class="btn btn-secondary btn-sm me-2" disabled>
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                    <button class="btn btn-dark btn-sm">
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="newsletter" class="py-5 bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h2 class="fw-bold mb-4">SE INSCREVA<br>EM NOSSO NEWSLETTER</h2>
+                        <form class="d-flex">
+                            <input type="email" class="form-control shadow-sm" placeholder="Digite seu e-mail" aria-label="Email" required>
+                            <button type="submit" class="btn btn-dark shadow-sm ms-2">
+                                <i class="bi bi-arrow-up-right"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <img src="imgs/news-img.avif" alt="Newsletter Image" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-4 bg-light border-top">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <a class="btn btn-dark btn-sm d-inline-flex align-items-center justify-content-center me-2" aria-label="Facebook">
+                    <i class="bi bi-facebook"></i>
+                    </a>
+                    <a class="btn btn-dark btn-sm d-inline-flex align-items-center justify-content-center  me-2" aria-label="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a class="btn btn-dark btn-sm d-inline-flex align-items-center justify-content-center  me-2" aria-label="Twitter">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                </div>
+                <nav aria-label="Page navigation">
+                    <ul class="pagination mb-0">
+                        <li class="page-item disabled">
+                            <a class="page-link bg-light border-0 rounded-3" aria-label="Previous" >
+                                <i class="bi bi-arrow-left"></i>
+                            </a>
+                        </li>
+                        <li class="page-item active">
+                            <a class="page-link bg-dark text-white border-0 rounded-circle" >1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link bg-light border-0 rounded-circle" >2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link bg-light border-0 rounded-circle" >3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link bg-light border-0 rounded-circle" >4</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link bg-dark text-white border-0 rounded-3" aria-label="Next" >
+                            <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/assets/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>
