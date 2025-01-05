@@ -500,3 +500,72 @@ header {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
+#artigos h2 {
+    font-family: var(--fonte-sequel-medium);
+    font-style: normal;
+    font-weight: 415;
+    font-size: 28px;
+    line-height: 38px;
+    color: var(--cor-mais-escura);
+}
+
+#artigos .card-img-top {
+    height: 248px;
+    background-size: cover; 
+}
+
+#artigos .card-body .author-logo {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px; 
+    flex: none; 
+    order: 0;
+    flex-grow: 0;
+    object-fit: cover;
+}
+
+#artigos .card-body .author-name {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.1px;
+    color: #3E3232;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+#artigos .card-body .article-date {
+    font-family: var(--fonte-dmsans);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--cor-mais-escura);
+}
+
+#artigos .card-title {
+    font-family: var(--fonte-sequel-medium);
+    font-style: normal;
+    font-weight: 415;
+    font-size: 22px;
+    line-height: 29px;
+    color: var(--cor-mais-escura);
+}
+
+#artigos .card-body .description {
+    font-family: var(--fonte-dmsans);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px; 
+    line-height: 20px; 
+    color: #696868;
+}
+
+#artigos .btn{
+    width: 70px;
+    height: 50px;
+}
