@@ -620,3 +620,43 @@ header {
 #newsletter button[type="submit"]:hover {
     background-color: #444;
 }
+
+footer .pagination {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+footer .pagination .page-item .page-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    font-size: 18px;
+    color: var(--cor-mais-escura);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+footer .pagination .page-item.disabled .page-link {
+    background-color: #a0a0a0;
+    color: #a0a0a0; 
+}
+
+footer .pagination .page-item.active .page-link {
+    background-color: #000;
+    color: #fff;
+}
+
+footer .pagination .page-item .page-link:hover {
+    background-color: #d6d6d6;
+}
+
+footer .btn{
+    width: 47.03px;
+    height: 48.13px;
+}
