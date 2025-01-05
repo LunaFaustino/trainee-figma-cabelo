@@ -569,3 +569,54 @@ header {
     width: 70px;
     height: 50px;
 }
+
+#newsletter h2 {
+    font-family: var(--fonte-sequel-medium);
+    font-style: normal;
+    font-weight: 435; 
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, var(--cor-mais-escura) 0%, var(--cinza-claro) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+#newsletter input {
+    border: 1px solid #ccc;
+    padding: 0 16px;
+    font-family: var(--fonte-dmsans);
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--cor-mais-escura);
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#newsletter input::placeholder {
+    font-family: var(--fonte-dmsans); 
+    font-style: normal; 
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: rgba(38, 38, 38, 0.37);
+}
+
+#newsletter button[type="submit"] {
+    background: var(--cor-mais-escura);
+    border-radius: 0px 6px 6px 0px;
+    border: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#newsletter button[type="submit"]:hover {
+    background-color: #444;
+}
